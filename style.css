@@ -740,19 +740,51 @@ img {
 }
 
 .box-content.three {
-    background-image: url('assets/backlog-app-ss.png');
-    background-size: 200%;
-    /* Increased size to make logo more prominent */
+    position: relative;
+}
+
+.box-content.three .card-bg-blur {
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/ocp-logo.png');
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    border-radius: 10px;
+    filter: blur(3px);
+    transform: scale(1.06);
+    transition: filter 0.5s ease, transform 0.5s ease;
+    z-index: 0;
+}
+
+.box-content.three:hover .card-bg-blur {
+    filter: blur(0px);
+    transform: scale(1.0);
 }
 
 .box-content.four {
-    background-image: url('https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=800');
+    position: relative;
+}
+
+.box-content.four .card-bg-blur {
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/weather-dashboard-ss.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    filter: blur(3px);
+    transform: scale(1.06);
+    transition: filter 0.5s ease, transform 0.5s ease;
+    z-index: 0;
+}
+
+.box-content.four:hover .card-bg-blur {
+    filter: blur(0px);
+    transform: scale(1.0);
 }
 
 .box-content.five {
-    background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=800');
+    background-image: url('assets/school.png');
 }
 
 .box-content.six {
@@ -760,7 +792,7 @@ img {
 }
 
 .box-content.seven {
-    background-image: url('https://images.unsplash.com/photo-1555396273-0608c80b0e27?auto=format&fit=crop&q=80&w=800');
+    background-image: url('assets/restaurant.png');
 }
 
 .box-content.eight {
